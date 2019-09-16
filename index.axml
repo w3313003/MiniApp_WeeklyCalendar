@@ -1,0 +1,13 @@
+<view a:for='{{weekList}}' a:for-index="yy" a:for-item="year">
+	<block>
+		<view style='color:red'>
+			{{yy}}年
+		</view>
+		<view style='color: blue' a:for='{{year}}' a:for-index="mm" a:for-item='month'>
+			{{mm}}月
+			<view style='color: #000' a:for='{{month}}' a:for-index="i" a:for-item='week'>
+				第{{i + 1}}周: {{week[0]}}~~~~{{week[1]}}
+			</view>
+		</view>
+	</block>
+</view>
